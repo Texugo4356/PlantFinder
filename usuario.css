@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-image: linear-gradient(to right, #7ae582, #00a5cf);
+    /* background-color: white; */
+    width: 100vw;
+    height: 100vh;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+
+}
+
+
+.user{
+  padding: 100px;
+
+
+
+
+}
+
+.user img{
+  width: 70px !important;
+  cursor: pointer !important;
+  padding: 50px !important;
+
+  background-color: white !important;
+
+
+}
