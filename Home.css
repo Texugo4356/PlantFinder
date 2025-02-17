@@ -5,8 +5,7 @@ body{
     /* background-color: white; */
     width: 100vw;
     height: 100vh;
-
-
+    text-align: center;
 
 }
 
@@ -24,11 +23,7 @@ body{
   display: flex;
   align-items: flex-end;
 
-
-
 }
-
-
 
 .conteudo{
   max-width: 1500px;
@@ -36,34 +31,78 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+
+.conteudo h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.swiper-container{
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  padding: 40px 0;
+  box-sizing: border-box;
+  padding: 5px;
+
+
+}
+
+.planta-card{
+  width: 300px; 
+  height: 500px;
+  background-color: #14746F;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: left;
+
   
+}
+
+.imagem{
+  text-align: center;
+
+}
 
 
+.planta-card img{
+  width: 400px;
+  border-radius: 30px 30px 30px 30px;
+  transition: background-image 5s ease, transform 0.3s ease;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.planta-card img:hover{
+  transform: scale(1.10);
+  border-radius: 30px 30px 30px 30px;
 
 }
 
 .imagens{
+  width: 500px; 
+  height: 650px;
   background-color: #14746F;
-  width: 500px;
-  padding: 50px;
-  box-shadow: 0 4px 6px rgba(0.5, 0.5, 0.5, 0.5);
-  border-radius: 30px 30px 30px 30px;
-  margin-right: 100px;
+  padding: 20px;
+  margin-top: 20px;
   margin-left: 100px;
-  margin: 0 auto;
-  display: flex-end;
-  align-items: center;
-  justify-content:center;
-  transition: background-image 5s ease, padding-bottom 0.3s ease;
-  
-}
-
-.imagens:hover{
-  padding-bottom: 400px;
-
-
-
-
+  margin-right: 100px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: left;
 
 }
 
@@ -72,16 +111,11 @@ body{
   border-radius: 30px 30px 30px 30px;
   transition: background-image 5s ease, transform 0.3s ease;
   padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
   
-
-
 }
-.imagens img:hover{
-  transform: scale(1.10);
-  border-radius: 30px 30px 30px 30px;
 
-
-}
 .texto{
   color: white;
 
@@ -92,5 +126,20 @@ body{
   font-weight: bold;
   padding-bottom: 20px;
 
+}
+
+p{
+  color: white;
 
 }
+
+h3{
+  color: white;
+
+}
+
+h2{
+  color: white;
+
+}
+

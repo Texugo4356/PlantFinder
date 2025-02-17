@@ -1,10 +1,10 @@
 <?php
 // Db usuarios
-define('HOST', 'localhost');  // Ou o IP do servidor PostgreSQL
-define('PORT', '5432');       // Porta padrão do PostgreSQL
-define('DBNAME', 'cadastro');  // Nome do banco de dados
-define('USER', 'postgres');   // Usuário do PostgreSQL
-define('PASSWORD', '4356');  // Senha do PostgreSQL
+define('HOST', 'localhost'); 
+define('PORT', '5432');      
+define('DBNAME', 'cadastro');  
+define('USER', 'postgres');  
+define('PASSWORD', '4356');  
 
 
 $conexao = pg_connect("host=" . HOST . " port=" . PORT . " dbname=" . DBNAME . " user=" . USER . " password=" . PASSWORD);
