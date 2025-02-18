@@ -9,12 +9,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $medicinal = $_POST["med"];
     $consumivel = $_POST["cons"];
 
-    // Salvar a imagem no servidor
     $imagem = $_FILES["imagem"];
     $caminhoImagem = "uploads/" . basename($imagem["name"]);
 
     if (move_uploaded_file($imagem["tmp_name"], $caminhoImagem)) {
-        // Inserir no PostgreSQL
+
         $sql = "INSERT INTO plantas (nome, descricao, imagem, luz_solar, agua, medicinal, consumivel) VALUES ($1, $2, $3, $4, $5, $6, $7)";
         $result = pg_query_params($conexao, $sql, [$nome, $descricao, $caminhoImagem, $luz_solar, $agua, $medicinal, $consumivel]);
 
